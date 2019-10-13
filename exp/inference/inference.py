@@ -181,7 +181,7 @@ if __name__ == '__main__':
     parser.add_argument('--use_gpu', default=1, type=int)
     opts = parser.parse_args()
 
-    net = deeplab_xception_transfer.deeplab_xception_transfer_projection_savemem(n_classes=20,
+    net = deeplab_xception_transfer.deeplab_xception_transfer_projection_savemem(n_classes=2,
                                                                                  hidden_layers=128,
                                                                                  source_classes=7, )
     if not opts.loadmodel == '':
